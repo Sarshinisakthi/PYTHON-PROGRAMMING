@@ -1,0 +1,15 @@
+N = input("Enter a natural number: ")
+validation = True
+if not(N.isnumeric()):
+    validation = False
+else:
+    N = int(N)
+    if (N<1):
+        validation = False
+if validation:
+    answer = (N*(N+1))/2
+    answer = int(answer)
+    print(answer)
+else:
+    print('Input is not a natural number. Try again.')
+
