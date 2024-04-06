@@ -1,0 +1,4 @@
+length=10
+width=12
+room_area=length*width
+print("the area of rectangle room in meters is:",room_area)
