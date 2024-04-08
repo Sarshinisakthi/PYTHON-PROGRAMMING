@@ -1,0 +1,69 @@
+a="Happy birthday"
+print(a.capitalize())
+
+a="HAPPY BIRTHDAY"
+print(a.upper())
+
+a="happy birthday"
+print(a.lower())
+
+a="Happy Birthday"
+print(a.title())
+
+a="HAPPY BIRTHDAY"
+print(a.swapcase())
+
+a="Happy birthday"
+print(a.split())
+
+a="happy birthday"
+print(a.center(19,"*"))
+
+a="happy birthday"
+print(a.count("happy"))
+
+a="happy birthday"
+print(a.replace("happy","wish you happy"))
+
+b="happy"
+a="-"
+print(a.join(b))
+
+a="happy birthday"
+print(a.isupper())
+
+a="happy birthday"
+print(a.lower())
+
+a="happy birthday"
+print(a.isalpha())
+
+a="happy birthday"
+print(a.isalnum())
+
+a="happy birthday"
+print(a.isdigit())
+
+a="happy birthday"
+print(a.isspace())
+
+a="happy birthday"
+print(a.istitle())
+
+a="happy birthday"
+print(a.startswith("h"))
+
+a="happy birthday"
+print(a.endswith("y"))
+
+a="happy birthday"
+print("happy")
+
+a="happy birthday"
+print(len(a))
+
+a="happy birthday"
+print(min(a))
+
+a="happy birthday"
+print(max(a))
