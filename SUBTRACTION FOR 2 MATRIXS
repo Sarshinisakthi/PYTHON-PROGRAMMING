@@ -1,0 +1,36 @@
+def subtract_matrices(matrix1, matrix2):
+    result = []
+    if len(matrix1) != len(matrix2) or len(matrix1[0]) != len(matrix2[0]):
+        print("Matrices should have the same dimensions for subtraction.")
+        return None
+    for i in range(len(matrix1)):
+        row = []
+        for j in range(len(matrix1[0])):
+            row.append(matrix1[i][j] - matrix2[i][j])
+        result.append(row)
+    return result
+def input_matrix():
+    rows = int(input("Enter the number of rows: "))
+    cols = int(input("Enter the number of columns: "))
+    matrix = []
+    print("Enter the matrix entries row-wise:")
+    for i in range(rows):
+        row = []
+        for j in range(cols):
+            entry = int(input(f"Enter element at position ({i+1},{j+1}): "))
+            row.append(entry)
+        matrix.append(row)
+    return matrix
+
+def print_matrix(matrix):
+    for row in matrix:
+        print(row)
+print("Enter details for first matrix:")
+matrix1 = input_matrix()
+print("\nEnter details for second matrix:")
+matrix2 = input_matrix()
+result = subtract_matrices(matrix1, matrix2)
+if result:
+    print("\nResultant matrix after subtraction:")
+    print_matrix(result)
+
