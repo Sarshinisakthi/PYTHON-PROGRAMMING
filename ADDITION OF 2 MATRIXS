@@ -1,0 +1,11 @@
+def print_matrix(matrix):
+    for row in matrix:
+        print(row)
+print("Enter the first matrix:")
+matrix1 = input_matrix()
+print("\nEnter the second matrix:")
+matrix2 = input_matrix()
+result = add_matrices(matrix1,matrix2)
+if result:
+    print("\nResultant matrix after Adddition:")
+    print_matrix(result)
