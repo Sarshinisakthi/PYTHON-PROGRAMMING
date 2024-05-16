@@ -1,0 +1,9 @@
+try:     
+x = "5"    
+y = 2     
+result = x / y    
+print(result) 
+except TypeError as e: 
+    print("TypeError occurred:", e)
+finally: 
+    print("This will always execute regardless of whether an exception occurred or not.") 
