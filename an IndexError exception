@@ -1,0 +1,7 @@
+try: 
+    my_list = [1, 2, 3]    
+print(my_list[3]) 
+except IndexError as e: 
+    print("IndexError occurred:", e)
+finally: 
+    print("This will always execute regardless of whether an exception occurred or not.") 
