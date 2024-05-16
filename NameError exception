@@ -1,0 +1,5 @@
+try: 
+    print(variable) 
+except NameError as e: 
+    print("NameError occurred:", e) finally: 
+    print("This will always execute regardless of whether an exception occurred or not.") 
