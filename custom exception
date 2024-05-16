@@ -1,0 +1,8 @@
+def divide(x,y):
+  if y==0:
+    raise ZeroDivisionError("number Cannot divide by zero")     
+  return x/y 
+try: 
+  result = divide(10,0)
+except ZeroDivisionError as e: 
+  print("Error occured:", e)
